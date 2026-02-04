@@ -1,0 +1,12 @@
+# Build results
+target/
+build/
+bin/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# Environment files
+.env

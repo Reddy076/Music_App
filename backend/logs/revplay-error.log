@@ -1,0 +1,10 @@
+2026-01-27 08:10:42 [com.revplay.app.RevPlayApp.main()] ERROR com.revplay.app.RevPlayApp - Application error: 
+java.util.NoSuchElementException: No line found
+	at java.util.Scanner.nextLine(Scanner.java:1660) ~[?:?]
+	at com.revplay.util.ConsoleUtil.readInt(ConsoleUtil.java:149) ~[classes/:?]
+	at com.revplay.util.ConsoleUtil.readInt(ConsoleUtil.java:159) ~[classes/:?]
+	at com.revplay.menu.MainMenu.showGuestMenu(MainMenu.java:61) ~[classes/:?]
+	at com.revplay.menu.MainMenu.display(MainMenu.java:41) ~[classes/:?]
+	at com.revplay.app.RevPlayApp.main(RevPlayApp.java:34) ~[classes/:?]
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]

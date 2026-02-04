@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</Property>
+        <Property name="LOG_PATH">${sys:revplay.log.path:-logs}</Property>
+    </Properties>
+
+    <Appenders>
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+
+        <!-- File Appender for All Logs -->
+        <RollingFile name="FileAppender" 
+                     fileName="${LOG_PATH}/revplay.log"
+                     filePattern="${LOG_PATH}/revplay-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="30"/>
+        </RollingFile>
+
+        <!-- File Appender for Error Logs -->
+        <RollingFile name="ErrorFileAppender" 
+                     fileName="${LOG_PATH}/revplay-error.log"
+                     filePattern="${LOG_PATH}/revplay-error-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="30"/>
+        </RollingFile>
+
+        <!-- File Appender for DAO Operations -->
+        <RollingFile name="DAOFileAppender" 
+                     fileName="${LOG_PATH}/revplay-dao.log"
+                     filePattern="${LOG_PATH}/revplay-dao-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="15"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- DAO Logger -->
+        <Logger name="com.revplay.dao" level="DEBUG" additivity="false">
+            <AppenderRef ref="DAOFileAppender"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <!-- Service Logger -->
+        <Logger name="com.revplay.service" level="DEBUG" additivity="false">
+            <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <!-- Controller Logger -->
+        <Logger name="com.revplay.controller" level="INFO" additivity="false">
+            <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <!-- Root Logger -->
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="ErrorFileAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>

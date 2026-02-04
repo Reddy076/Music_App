@@ -1,0 +1,58 @@
+2026-01-28 00:50:16 [main] INFO  com.revplay.app.RevPlayApp - Starting RevPlay Application...
+2026-01-28 00:50:16 [main] INFO  com.revplay.app.RevPlayApp - Initializing database connection...
+2026-01-28 00:50:16 [main] INFO  com.revplay.config.DatabaseConfig - Loaded .env from ./backend directory
+2026-01-28 00:50:16 [main] INFO  com.revplay.config.DatabaseConfig - Database configuration loaded successfully
+2026-01-28 00:50:16 [main] INFO  com.revplay.app.RevPlayApp - Database connection initialized successfully
+2026-01-28 00:55:09 [main] INFO  com.revplay.service.UserService - User registered successfully: uranusfor@gmail.com
+2026-01-28 00:55:09 [main] INFO  com.revplay.service.UserService - Artist registered successfully: red
+2026-01-28 00:55:09 [main] INFO  com.revplay.ui.MainMenu - New artist registered: red
+2026-01-28 00:57:55 [main] INFO  com.revplay.service.UserService - User logged in successfully: uranusfor@gmail.com
+2026-01-28 00:57:55 [main] INFO  com.revplay.ui.MainMenu - User logged in: uranusfor@gmail.com
+2026-01-28 01:00:43 [main] INFO  com.revplay.ui.ArtistMenu - Artist profile updated: red
+2026-01-28 01:01:15 [main] INFO  com.revplay.ui.ArtistMenu - Song uploaded: red by artist 6
+2026-01-28 01:01:49 [main] INFO  com.revplay.ui.ArtistMenu - Song uploaded: blue by artist 6
+2026-01-28 01:01:58 [main] INFO  com.revplay.ui.ArtistMenu - Song deleted: blue
+2026-01-28 01:02:14 [main] INFO  com.revplay.ui.ArtistMenu - Song deleted: blue
+2026-01-28 01:03:14 [main] INFO  com.revplay.ui.ArtistMenu - Song deleted: blue
+2026-01-28 01:04:57 [main] INFO  com.revplay.app.RevPlayApp - Starting RevPlay Application...
+2026-01-28 01:04:57 [main] INFO  com.revplay.app.RevPlayApp - Initializing database connection...
+2026-01-28 01:04:57 [main] INFO  com.revplay.config.DatabaseConfig - Loaded .env from ./backend directory
+2026-01-28 01:04:57 [main] INFO  com.revplay.config.DatabaseConfig - Database configuration loaded successfully
+2026-01-28 01:04:57 [main] INFO  com.revplay.app.RevPlayApp - Database connection initialized successfully
+2026-01-28 01:05:12 [main] INFO  com.revplay.service.UserService - User logged in successfully: uranusfor@gmail.com
+2026-01-28 01:05:12 [main] INFO  com.revplay.ui.MainMenu - User logged in: uranusfor@gmail.com
+2026-01-28 01:05:30 [main] INFO  com.revplay.ui.ArtistMenu - Song deleted: red
+2026-01-28 01:06:00 [main] INFO  com.revplay.ui.ArtistMenu - Song uploaded: red by artist 6
+2026-01-28 01:06:20 [main] INFO  com.revplay.ui.ArtistMenu - Album created: reddy by artist 6
+2026-01-28 01:06:52 [main] INFO  com.revplay.ui.ArtistMenu - Album updated: reddy
+2026-01-28 01:07:23 [main] INFO  com.revplay.ui.ArtistMenu - Album created: redq by artist 6
+2026-01-28 01:12:03 [main] INFO  com.revplay.ui.ArtistMenu - Song updated: red
+2026-01-28 01:12:34 [main] INFO  com.revplay.ui.ArtistMenu - Album deleted: redq
+2026-01-28 01:13:23 [main] INFO  com.revplay.ui.MainMenu - User logged out: reddy03
+2026-01-28 01:13:39 [main] INFO  com.revplay.service.UserService - User logged in successfully: mulachinna102@gmail.com
+2026-01-28 01:13:39 [main] INFO  com.revplay.ui.MainMenu - User logged in: mulachinna102@gmail.com
+2026-01-28 01:14:00 [main] INFO  com.revplay.service.SongService - User 9 played song 26
+2026-01-28 01:14:40 [main] INFO  com.revplay.ui.PlaylistMenu - Playlist created: red by user 9
+2026-01-28 01:15:01 [main] INFO  com.revplay.ui.PlaylistMenu - Playlist updated: red
+2026-01-28 01:15:14 [main] INFO  com.revplay.ui.PlaylistMenu - Song added to playlist: red -> red
+2026-01-28 01:15:36 [main] INFO  com.revplay.service.SongService - User 9 played song 26
+2026-01-28 01:15:48 [main] INFO  com.revplay.ui.PlaylistMenu - Song removed from playlist: red <- red
+2026-01-28 01:16:12 [main] INFO  com.revplay.ui.MainMenu - User logged out: reddy
+2026-01-28 01:16:13 [main] INFO  com.revplay.app.RevPlayApp - Shutting down RevPlay Application...
+2026-01-28 01:16:13 [main] INFO  com.revplay.app.RevPlayApp - Database resources released
+2026-01-28 01:16:13 [main] INFO  com.revplay.app.RevPlayApp - RevPlay Application shutdown complete
+2026-01-28 01:16:23 [main] INFO  com.revplay.app.RevPlayApp - Starting RevPlay Application...
+2026-01-28 01:16:23 [main] INFO  com.revplay.app.RevPlayApp - Initializing database connection...
+2026-01-28 01:16:23 [main] INFO  com.revplay.config.DatabaseConfig - Loaded .env from ./backend directory
+2026-01-28 01:16:23 [main] INFO  com.revplay.config.DatabaseConfig - Database configuration loaded successfully
+2026-01-28 01:16:23 [main] INFO  com.revplay.app.RevPlayApp - Database connection initialized successfully
+2026-01-28 01:16:36 [main] WARN  com.revplay.service.UserService - Login attempt with non-existent email: uranudfor@gmail.com
+2026-01-28 01:16:36 [main] WARN  com.revplay.ui.MainMenu - Login failed for email: uranudfor@gmail.com
+2026-01-28 01:17:10 [main] INFO  com.revplay.service.UserService - User logged in successfully: uranusfor@gmail.com
+2026-01-28 01:17:10 [main] INFO  com.revplay.ui.MainMenu - User logged in: uranusfor@gmail.com
+2026-01-28 01:17:58 [main] INFO  com.revplay.service.PodcastService - Searching podcasts with keyword: red
+2026-01-28 01:18:14 [main] INFO  com.revplay.service.SongService - User 10 played song 26
+2026-01-28 01:18:48 [main] INFO  com.revplay.ui.MainMenu - User logged out: reddy03
+2026-01-28 01:19:51 [main] INFO  com.revplay.app.RevPlayApp - Shutting down RevPlay Application...
+2026-01-28 01:19:51 [main] INFO  com.revplay.app.RevPlayApp - Database resources released
+2026-01-28 01:19:51 [main] INFO  com.revplay.app.RevPlayApp - RevPlay Application shutdown complete
