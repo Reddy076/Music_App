@@ -19,7 +19,11 @@
         <junit.version>5.10.0</junit.version>
         <mysql.version>8.0.33</mysql.version>
         <log4j.version>2.20.0</log4j.version>
-    </properties>
+    </properties
+
+<properties>
+  <sonar.organization>reddy076</sonar.organization>
+</properties>
 
     <dependencies>
         <!-- MySQL Connector (JDBC) -->
